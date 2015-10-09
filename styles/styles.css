@@ -173,3 +173,10 @@ div.au-stagger {
     opacity: 1;
   }
 }
+
+.fa-github {
+  text-align: center;
+  display: inline-block;
+  font-size: 80px;
+  margin-top: 50px;
+}
