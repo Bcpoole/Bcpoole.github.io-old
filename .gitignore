@@ -1,3 +1,8 @@
 .idea
 .DS_STORE
 build/reports
+
+node_modules/*gulp*
+node_modules/*run-sequence*
+node_modules/*karma*
+node_modules/*conventional-changelog*
