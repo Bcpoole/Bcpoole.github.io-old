@@ -16,10 +16,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.splash .fa-spinner {
+.splash .fa-cog {
   text-align: center;
   display: inline-block;
-  font-size: 72px;
+  font-size: 80px;
   margin-top: 50px;
 }
 
