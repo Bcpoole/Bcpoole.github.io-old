@@ -25,10 +25,6 @@ describe('the App module', () => {
   });
 
   it('configures the router title', () => {
-    expect(sut.router.title).toEqual('Aurelia');
-  });
-
-  it('should have a welcome route', () => {
-    expect(sut.router.routes).toContain({ route: ['', 'welcome'], name: 'welcome',  moduleId: 'welcome', nav: true, title: 'Welcome' });
+    expect(sut.router.title).toEqual('Brandon Poole');
   });
 });
