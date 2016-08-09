@@ -16,10 +16,10 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.splash .fa-cog {
+.splash .fa-spinner {
   text-align: center;
   display: inline-block;
-  font-size: 80px;
+  font-size: 72px;
   margin-top: 50px;
 }
 
@@ -70,7 +70,7 @@ div.au-stagger {
 }
 
 .card-container.au-enter {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .card-container.au-enter-active {
@@ -146,7 +146,7 @@ div.au-stagger {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(0, 100%, 0)
+    transform: translate3d(100%, 0, 0)
   }
   100% {
     opacity: 1;
@@ -172,18 +172,4 @@ div.au-stagger {
   100% {
     opacity: 1;
   }
-}
-
-.fa-github {
-  text-align: center;
-  display: inline-block;
-  font-size: 80px;
-  margin-top: 50px;
-}
-
-.fa-linkedin-square {
-  text-align: center;
-  display: inline-block;
-  font-size: 80px;
-  margin-top: 50px;
 }

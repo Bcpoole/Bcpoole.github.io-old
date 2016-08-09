@@ -1,8 +1,9 @@
+node_modules
+jspm_packages
+bower_components
 .idea
 .DS_STORE
 build/reports
-
-node_modules/*gulp*
-node_modules/*run-sequence*
-node_modules/*karma*
-node_modules/*conventional-changelog*
+coverage
+test/e2e/dist
+/export
