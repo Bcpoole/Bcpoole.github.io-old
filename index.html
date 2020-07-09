@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Brandon Poole</title>
+  <title><%- htmlWebpackPlugin.options.metadata.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/">
+  <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>">
   <!-- Add styles for Bootswatch here -->
   <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
   <!-- end Bootswatch -->
   <!-- imported CSS are concatenated and added automatically -->
-<link href="/css/vendors~203e0718.675a47ebb1ed94d8e5d4.chunk.css" rel="stylesheet"></head>
+</head>
 
 <body aurelia-app="main">
-  
+  <% if (htmlWebpackPlugin.options.metadata.server) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -23,6 +26,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-<script type="text/javascript" src="/runtime~app.41ceaf82403e0f90039b.bundle.js"></script><script type="text/javascript" src="/vendors~2a42e354.30c0472d51b4cf147fde.chunk.js"></script><script type="text/javascript" src="/vendors~4b868729.b00e5f6efd2e7eec27a7.chunk.js"></script><script type="text/javascript" src="/vendors~556c66f2.59d2d5c99a51e5edd05a.chunk.js"></script><script type="text/javascript" src="/vendors~50e8d500.fd6034da6f8b11793ccc.chunk.js"></script><script type="text/javascript" src="/vendors~ecff2e3d.4ebcc032c83fb8e8e41e.chunk.js"></script><script type="text/javascript" src="/vendors~203e0718.73057b7534cde19a864d.chunk.js"></script><script type="text/javascript" src="/app~f075b844.44627be98839940ef6ec.chunk.js"></script></body>
+</body>
 
 </html>
