@@ -1,0 +1,17 @@
+<template>
+  <nav class="navbar navbar-expand navbar-dark bg-primary justify-content-between">
+    <a class="navbar-brand mb-0 h1" href="#">
+      <i class="fa fa-home"></i>
+      <span>${appTitle}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ${item.isActive ? 'active' : ''}" repeat.for="item of router.navigation">
+        <a class="nav-link" href.bind="item.href">${item.title}</a>
+      </li>
+    </ul>
+  </nav>
+</template>
